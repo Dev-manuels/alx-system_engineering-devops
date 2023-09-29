@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 # script that that displays: The content of the current directory
 for file in *[!.]*; do
-    if [[ $file == *-* ]];
-    then
-        part_after_dash=$(echo "$file" | cut -d '-' -f 2-)
-        echo "$part_after_dash"
-    fi
+    part_after_dash=$(echo "$file" | cut -d '-' -f 2-)
+    echo "$part_after_dash"
 done
