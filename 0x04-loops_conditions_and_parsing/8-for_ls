@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script that that displays: The content of the current directory
+list = "ls"
