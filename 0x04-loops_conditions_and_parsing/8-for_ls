@@ -5,5 +5,9 @@ list="$(ls)"
 
 for file in $list
 do
-    echo "$file"
+    if [[ $file != .* ]]
+    then
+        tmp=$(echo "$file" | cut -d'-' -f2-)
+        echo "$tmp"
+    fi
 done
