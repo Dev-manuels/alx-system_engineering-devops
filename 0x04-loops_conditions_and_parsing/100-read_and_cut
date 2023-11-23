@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Read and cut
+
+file="/etc/passwd"
+
+while IFS=: read -r username _ uid _ _ home_dir _
+do
+    echo "$username:$uid:$home_dir"
+done < "$file"
