@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#scripts that shows all listening ports
+#only shows listening sockests and pid of the process to which they belong
+
+sudo netstat -lp
