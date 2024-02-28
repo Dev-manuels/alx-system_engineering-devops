@@ -1,6 +1,11 @@
 # Using Puppet, install flask from pip3
+
+# install pip3
+package { 'python3-pip':
+  ensure => installed,
+}
+
 package { 'flask':
-  ensure   => installed,
-  version  => '2.1.0',
+  ensure   => '2.1.0',
   provider => 'pip3',
 }
