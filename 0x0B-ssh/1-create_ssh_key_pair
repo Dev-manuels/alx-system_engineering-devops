@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that creates an RSA key pair
-ssh-keygen -b 4096
-school
-betty
+ssh-keygen -t rsa -b 4096 -P betty -f school
+# -t rsa: This option specifies the type of key to generate.
+# -b 4096: This option specifies the key size in bits.
+# -P betty: This option sets a passphrase for the private key.
+# -f school: This option specifies the filename for the generated key pair
