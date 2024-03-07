@@ -6,5 +6,7 @@ while [ $i -lt 4 ]
 do
     echo "To infinity and beyond"
     sleep 2
-    trap 'echo "I am invincible!!!" ; exit' TERM
+    trap 'echo "I am invincible!!!"; i=5' TERM
 done
+
+exit 0
