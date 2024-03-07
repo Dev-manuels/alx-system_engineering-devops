@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# script repeatedly prints "To infinity and beyond" with a two-second pause in between, but then terminates gracefully when it receives a specific signal.
+i=1
+
+while [ $i -lt 4 ]
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
+trap 'echo "I am invincible!!!" ; exit' TERM
