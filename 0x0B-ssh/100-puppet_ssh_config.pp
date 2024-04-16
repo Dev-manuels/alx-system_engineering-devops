@@ -1,3 +1,4 @@
+#using puppet to configure the cnnection process between server and client
 node 'alx node' {
   class { 'ssh::client': }
 
